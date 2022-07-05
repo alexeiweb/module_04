@@ -61,8 +61,7 @@ export const todo = () => {
     list.append(todoLi);
 
     todoForm.reset();
-    document.querySelector('.todo__count').innerHTML = document.querySelectorAll('.todo__list-item').length;
-
+    document.querySelector('.todo__count').innerHTML = document.querySelectorAll('.todo__list-item').length;    
   };
 
   const createTodo = ({ ready, author, post, id }) => {
@@ -97,7 +96,7 @@ export const todo = () => {
       const todoListItems = document.querySelectorAll('.todo__list-item');
       
       counter.innerHTML = todoListItems.length;       
-      document.querySelector('.todo__count').innerHTML = document.querySelectorAll('.todo__list-item').length;    
+          
       
       // const removeTodo = document.addEventListener('click', function(event) {
       //   if (event.which ==3) {
