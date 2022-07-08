@@ -32,8 +32,7 @@ export const todo = () => {
       this.setTodoLS();
 
       return todo;
-    },
-    
+    },    
 
     getTodoLS() {
       if (localStorage.getItem('todo')) {
@@ -95,21 +94,12 @@ export const todo = () => {
       const counter = document.querySelector('.todo__count');    
       const todoListItems = document.querySelectorAll('.todo__list-item');
       
-      counter.innerHTML = todoListItems.length;       
-          
-      
-      // const removeTodo = document.addEventListener('click', function(event) {
-      //   if (event.which ==3) {
-      //   alert('Удалить');
-      //   }
+      counter.innerHTML = todoListItems.length;
+
             // todoListItems.splice(i, -1)
-      // });
+      
     }
   };
-
-  // const removeTodo = event => {
-  //   event.which == 3
-  // }
 
   const checkTodo = event => {
     const btn = event.target.closest('.post__ready');

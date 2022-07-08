@@ -27,7 +27,7 @@ export const calc = () => {
           result = num1 / num2;
           break;
       }
-      debugger;
+      
       resultInner.innerHTML = result; /* вставляем полученное значение в верстку */
     });  
   }); 
